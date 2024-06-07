@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title> Pettopia </title>
+        <link rel="stylesheet" type = "text/css" href="FormPH.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3 style="font-family:'Franklin Gothic Medium'"> <i>PETTOPIA</i> </h3>
+            <p>Melayani Anda dengan Sepenuh Hati</p>
+            </div>
+
+        <div class="logo">
+        <img src="Logoo.png" alt="">
+        </div>  
+
+        <div class="login">
+            <a href="Login.html"> <img src="profil.png" alt=""> </a>
+        </div>
+        
+        <form>
+            <input type = "text" name="search" placeholder="Search">
+        </form>
+
+        <div class = "keranjang">
+            <a href="Keranjang.html"> <img src = "BASKET 2.png"> </a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="pettopia.html">Home</a></li> 
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="PenitipanHewan.html">Penitipan Hewan</a></li>
+                        <li><a href="GroomingHewan.html">Grooming Hewan</a></li>
+                        <li><a href="DokterHewan.html">Dokter Hewan</a></li>
+                        <li><a href="Produk.html">Produk</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Articles.html">Articles</a></li>
+                <li><a href="Promotion.html">Promotion</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li><a href="Myorder.html">My Order</a></li>
+            </ul>
+        </nav>
+        <h1>Form Booking Layanan Penitipan Hewan</h1>
+        <br>
+        <h2>Identitas</h2>
+        <table align="center">
+            <tr>
+                <td width="254px">Nama</td>
+                <td width="35px" align="center">:</td>
+                <td width="619px"><input class="text" placeholder="Nama Anda" required></td>
+            </tr>
+            <tr>
+                <td>Nomor Handphone</td>
+                <td align="center">:</td>
+                <td><input class="tel" placeholder="Nomor Handphone Anda" required></td>
+            </tr>
+            <tr>
+                <td>Nama Hewan</td>
+                <td align="center">:</td>
+                <td><input class="text" placeholder="Nama Hewan Anda"required></td>
+            </tr>
+            <tr>
+                <td>Spesies Hewan</td>
+                <td align="center">:</td>
+                <td><div><input type="radio" name="Spesies" value="Kucing" checked>Kucing
+                    <input type="radio" name="Spesies" value="Ikan">Ikan
+                    <input type="radio" name="Spesies" value="Anjing">Anjing</div></td>
+            </tr>
+            <tr>
+                <td>Ras Hewan</td>
+                <td align="center">:</td>
+                <td><input class="text" placeholder="Ras Hewan Anda (co: Shih-Tzu)" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin Hewan</td>
+                <td align="center">:</td>
+                <td><input type="radio" name="JenisKelamin" value="Jantan" checked>Jantan
+                    <input type="radio" name="JenisKelamin" value="Betina">Betina</td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir Hewan</td>
+                <td align="center">:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Berat Hewan</td>
+                <td align="center">:</td>
+                <td><input type="number" min="0" class="beratkg" placeholder="kilogram" required>kg
+                    <input type="number" min="0" class="beratgr" placeholder="gram">gram  *</td>
+            </tr>
+        </table>
+        <p class="tambahan">*Contoh hewan dengan berat 5,3 kg maka dituliskan sebagai 5 kg 300 gram</p>
+        <br>
+        <h2>Layanan Penitipan Hewan</h2>
+        <table align="center">
+            <tr>
+                <td width="254px">Tanggal Check In</td>
+                <td width="35px" align="center">:</td>
+                <td width="619px"><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Check Out</td>
+                <td align="center">:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td valign="top">Permintaan Khusus (Opsional)</td>
+                <td  valign="top" align="center">:</td>
+                <td><textarea cols="80" rows="5" placeholder="Tuliskan permintaan khusus untuk Hewan Anda (co: Makanan harus hangat)"></textarea></td>
+            </tr>
+        </table>
+        <br>
+        <h2>Kondisi Hewan (Opsional)</h2>
+        <textarea class="kondisi" cols="131" rows="5" placeholder="Tuliskan kondisi hewan Anda, seperti riwayat penyakit atau lainnya"></textarea>
+        <br><br>
+        <button type="Next"><a href="RincianFormPH.html">
+            <span class="Next_text"><b>Lanjut</b></a></span>
+        </button>
+        <br><br><br><br>
+    </body>
+</html> 

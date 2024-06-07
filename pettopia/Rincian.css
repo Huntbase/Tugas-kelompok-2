@@ -1,0 +1,659 @@
+body{
+    background-color: #FDC0C0;
+    background-size: 100%;
+}
+
+.logo img{
+    width: 100px;
+    margin-left: 20px;
+    margin-top: -95px;
+}
+
+.container h3{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 120px;
+    font-size: 25;
+    letter-spacing: 2px;
+
+}
+
+.container p{
+    margin-top: -15px;
+    margin-left: 120px;
+}
+
+input[type=text]
+{
+    width: 130px;
+    height: 40px;
+    margin-left: 550px;
+    margin-top: -60px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+    background-image: url('search.png');
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    padding: 15px 2px 10px 50px;
+    -webkit-transition: width 0.5s ease-out;
+    transition: width 0.5s ease-in-out;
+}
+
+input[type=text]:focus
+{
+    width: 40%;
+}
+
+form ::placeholder{
+color: black;
+}
+
+
+.login{
+    display: flex;
+}
+
+.login img{
+    width: 70px;
+    margin-left: 1150px;
+    margin-top: -75px;
+}
+
+
+nav  {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    width: 150px;
+}
+
+.navbar{
+    margin-left: -10px;
+    width: 1320px;
+    display: flex;
+}
+
+nav ul {
+    background: white;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover {
+    background: #d4d4d4;
+}
+
+nav ul li:hover a {
+    color: black;
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul ul {
+    background: white;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #ffdfc4;
+    border-bottom: 1px solid #ffdfc4;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #fff;
+}
+
+nav ul ul li a:hover {
+    background-color: #D4D4D4 ;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.keranjang{
+    margin-left: 1090px;
+    margin-top: -75px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+    
+}
+
+/* Styling untuk kotak gambar */
+.image-box {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    margin-left: -950px;
+    margin-top: 40px;
+}
+
+/* Styling untuk gambar di dalam kotak */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar memenuhi seluruh kotak tanpa merubah aspek ratio */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box{
+    width: 900px;
+    height: 250px;
+    background-color: white;
+    margin-left: 300px;
+    margin-top: -281px;
+    border: 1px solid black;
+}
+
+u{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 270px;
+    margin-top: 10px;
+}
+
+
+h2{
+    color: red;
+    margin-left: 55px;
+    margin-top: 15px;
+    background-color: #d4d4d4;
+    width: 135px;
+}
+
+.box h3{
+    margin-left: 55px;
+    padding: 5px;
+    
+
+}
+
+table{
+    margin-left: 56px;
+}
+
+th{
+    text-align: justify;
+}
+
+.garis{
+    margin-left: 300px;
+    margin-top: -99px;
+}
+
+.garis2, .garis3, .garis4, .garis5, .garis6{
+    margin-left: 300px;
+}
+
+.table2{
+    margin-left: 280px;
+    margin-top: -110px;
+}
+
+.garis7{
+    margin-left: 650px;
+    margin-top: -101px;
+}
+
+.garis8{
+    margin-left: 650px;
+}
+
+.garis9{
+    margin-left: 650px;
+}
+
+.garis10{
+    margin-left: 650px;
+}
+.garis11{
+    margin-left: 650px;
+} 
+
+.garis12{
+    margin-left: 650px;
+    margin-bottom: 80px;
+}
+
+.capkaki{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-left: 720px;
+    margin-top: -190px;
+}
+
+.keranjang2{
+    display: flex;
+    background-color: white;
+    color: black;
+    margin-left: 340px;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 80px;
+    position: relative;
+    border: 1px solid black;
+    width: 170px;
+    height: 20px;
+}
+
+.keranjang2:hover{
+    color: #D4D4D4;
+}
+
+.keranjang2 img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    padding-right: 5px;
+    margin-top: -4px;
+}
+
+/*PRODUK HEWAN - KUCING*/
+
+.kucingbsh, .kucingspy{
+    color: red;
+    margin-left: 55px;
+    margin-top: 15px;
+    background-color: #d4d4d4;
+    width: 148px;
+}
+
+
+.box .txt u{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 235px;
+    margin-top: 10px;
+}
+
+.hargamaine{
+    color: red;
+    margin-left: 55px;
+    margin-top: 15px;
+    background-color: #d4d4d4;
+    width: 150px;
+}
+
+/*Kucing maine coon*/
+.box .text u{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 255px;
+    margin-top: 10px;
+}
+
+/*PRODUK HEWAN - IKAN*/
+
+/*Ikan Mutiara*/
+.ikanmutiara{
+    margin-left: 70px;
+}
+
+.hargaikan{
+    width: 160px;
+}
+
+/*Ikan Guppy*/
+.ikanguppy{
+    margin-left: 35px;
+}
+
+/*Ikan Nemo*/
+.ikannemo{
+    margin-left: 70px;
+}
+
+/*Ikan Louhan*/
+.ikanlouhan{
+    margin-left: -10px;
+}
+
+.hargaikanjutaan{
+    width: 190px
+}
+
+/*Ikan Neon*/
+.hargaikanribuan{
+    width: 147px;
+}
+
+.ikanneon{
+    margin-left: 16px;
+}
+
+/*Ikan Manfish*/
+.ikanmanfish{
+    margin-left: -30px;
+}
+
+/*Ikan Discus*/
+.ikandiscus{
+    margin-left: 43px;
+}
+
+/*PRODUK HEWAN - ANJING*/
+/*Anjing Husky*/
+.anjinghusky{
+    margin-left: 28px;
+}
+
+/*Anjing Chihuahua*/
+.anjingch{
+    margin-left: -8px;
+}
+
+/*Anjing Corgi*/
+.anjingcorgi{
+    margin-left: -30px;
+}
+
+/*Anjing Pitbull*/
+.anjingpitbull{
+    margin-left: 20px;
+}
+
+/*Anjing Golden*/
+.hargaanjinggolden{
+    width: 150px;
+}
+
+.anjinggolden{
+    margin-left: 50px;
+}
+
+/*Anjing Maltese*/
+.anjingmaltese{
+    margin-left: -10px;
+}
+
+/*Anjing Beagle*/
+.anjingbeagle{
+    margin-left: 270px;
+}
+
+/*Anjing Bichon*/
+.anjingbichon{
+    margin-left: -7px;
+}
+
+/*PRODUK MAKANAN - KUCING*/
+.makanankucing{
+    width: 106px
+}
+
+.makanankucing2{
+    width: 117px;
+}
+
+.makanankucing3{
+    margin-left: 30px;
+}
+
+.makanankucing5{
+    margin-left: 70px;
+}
+
+.makanankucing6{
+    margin-left: 30px;
+}
+
+.makanankucing7{
+    margin-left: 65px;
+}
+
+.makanankucing8{
+    margin-left: 70px;
+}
+
+.makanankucing9{
+    margin-left: 80px;
+}
+
+.makanankucing10{
+    margin-left: 75px;
+}
+
+.hargamakanankucing10{
+    width: 120px;
+}
+
+/*Produk Makanan Hewan-Ikan*/
+.makananikan1{
+    margin-left: 20px;
+}
+
+.hargamakananikan, .hargamakanananjing, .hargaaksesoriskucing, .hargaaksesorisikan, .hargaaksesorisanjing{
+    width: 108px;
+}
+
+.makananikan2{
+    margin-left: 55px;
+}
+
+.makananikan3{
+    margin-left: 30px;
+}
+
+.makananikan4{
+    margin-left: 9px;
+}
+
+.makananikan5{
+    margin-left: 17px;
+}
+
+.makananikan6{
+    margin-left: 30px;
+}
+
+.hargamakananikanratusan, .hargamakanananjingratusan, .hargaaksesoriskucingratusan, .hargaaksesorisikanratusan, .hargaaksesorisanjingratusan{
+    width: 120px;
+}
+
+.makananikan6{
+    margin-left: 70px;
+}
+
+.makananikan7{
+    margin-left: 20px;
+}
+
+.makananikan9{
+    margin-left: 7px;
+}
+
+/*Produk Makanan Hewan - Anjing*/
+
+.makanananjing1{
+    margin-left: -15px;
+}
+
+.makanananjing2{
+    margin-left: 5px;
+}
+
+.makanananjing3{
+    margin-left: 20px;
+}
+
+.makanananjing4{
+    margin-left: -10px;
+}
+
+.makanananjing5{
+    margin-left: -10px;
+}
+
+.makanananjing8{
+    margin-left: 55px;
+}
+
+.makanananjing10{
+    margin-left: 30px;
+}
+
+/*Produk Aksesoris - Kucing*/
+.aksesoriskucing1{
+    margin-left: 38px;
+}
+
+.aksesoriskucing2{
+    margin-left: 55px;
+}
+
+.aksesoriskucing3{
+    margin-left: 40px;
+}
+
+.aksesoriskucing4{
+    margin-left: 80px;
+}
+
+.aksesoriskucing5{
+    margin-left: 55px;
+}
+
+.aksesoriskucing6{
+    margin-left: 60px;
+}
+
+.aksesoriskucing7{
+    margin-left: 40px;
+}
+
+.aksesoriskucing8{
+    margin-left: 70px;
+}
+
+.aksesoriskucing10{
+    margin-left: 30px;
+}
+
+.aksesorisikan1{
+    margin-left: 32px;
+}
+
+.aksesorisikan2{
+    margin-left: 48px;
+}
+
+.aksesorisikan3{
+    margin-left: 37px;
+}
+
+.aksesorisikan4{
+    margin-left: 60px;
+}
+
+.aksesorisikan5{
+    margin-left: 55px;
+}
+
+.aksesorisikan6{
+    margin-left: 45px;
+}
+
+.aksesorisikan8{
+    margin-left: 35px;
+}
+
+.aksesorisikan9{
+    margin-left: 48px;
+}
+
+.aksesorisikan10{
+    margin-left: 50px;
+}
+
+.aksesorisanjing1{
+    margin-left: 50px;
+}
+
+.aksesorisanjing2{
+    margin-left: 80px;
+}
+
+.aksesorisanjing3{
+    margin-left: 60px;
+}
+
+.aksesorisanjing4{
+    margin-left: 70px;
+}
+
+.aksesorisanjing5{
+    margin-left: 80px;
+}
+
+.aksesorisanjing6{
+    margin-left: 55px;
+}
+
+.aksesorisanjing7{
+    margin-left: 56px;
+}
+
+.aksesorisanjing8{
+    margin-left: 43px;
+}
+
+.aksesorisanjing9{
+    margin-left: 45px;
+}
+
+.akseorisanjing10{
+    margin-left: 50px;
+}
+
+
+
+
