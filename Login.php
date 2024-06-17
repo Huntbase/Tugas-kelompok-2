@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("config.php");
 
 if (isset($_POST['register'])) {
@@ -16,7 +17,7 @@ if (isset($_POST['register'])) {
     // bind parameter ke query
     $params = array(
         ":username" => $username,
-        ":email" => $username
+        ":email" => $email
     );
 
     $stmt->execute($params);
@@ -24,11 +25,12 @@ if (isset($_POST['register'])) {
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($user) {
-        $error_message = "Username atau Email sudah digunakan";
+        $_SESSION['error_message'] = "Username atau Email sudah digunakan";
+        header("Location: login.php?username=mikaael");
+        exit();
     } else {
-
         $sql = "INSERT INTO users (name, username, email, password) 
-            VALUES (:name, :username, :email, :password)";
+                VALUES (:name, :username, :email, :password)";
         $stmt = $db->prepare($sql);
 
         // bind parameter ke query
@@ -44,7 +46,14 @@ if (isset($_POST['register'])) {
 
         // jika query simpan berhasil, maka user sudah terdaftar
         // maka alihkan ke halaman login
-        if ($saved) header("Location: login.php");
+        if ($saved) {
+            header("Location: login.php?username=mikaael");
+            exit();
+        } else {
+            $_SESSION['error_message'] = "Pendaftaran gagal, silakan coba lagi.";
+            header("Location: login.php?username=mikaael");
+            exit();
+        }
     }
 }
 
@@ -70,15 +79,19 @@ if (isset($_POST['login'])) {
         // verifikasi password
         if (password_verify($password, $user["password"])) {
             // buat Session
-            session_start();
             $_SESSION["user"] = $user;
             // login sukses, alihkan ke halaman timeline
-            header("Location: Articles.php");
+            header("Location: Home.php");
+            exit();
         } else {
-            echo "Password salah!";
+            $_SESSION['error_message'] = "Password salah!";
+            header("Location: login.php");
+            exit();
         }
     } else {
-        echo "Username atau email tidak ditemukan!";
+        $_SESSION['error_message'] = "Username atau email tidak ditemukan!";
+        header("Location: login.php");
+        exit();
     }
 }
 ?>
@@ -92,11 +105,12 @@ if (isset($_POST['login'])) {
 </head>
 
 <body>
-    <?php if (isset($error_message)) : ?>
-        <p><?php echo $error_message; ?></p>
+    <?php if (isset($_SESSION['error_message'])) : ?>
+        <p><?php echo $_SESSION['error_message'];
+            unset($_SESSION['error_message']); ?></p>
     <?php endif; ?>
     <!-- Log In Form Section -->
-    <section> <!--Menggabungkan konten HTML-->
+    <section>
         <div class="container" id="container">
             <!-- Log In Form Section -->
             <div class="form-container sign-in-container">
@@ -144,6 +158,7 @@ if (isset($_POST['login'])) {
                         <input type="password" name="password" placeholder="Password" required />
                     </label>
                     <button type="submit" name="register" style="margin-top: 9px">Sign Up</button>
+
                 </form>
             </div>
             <!-- SIGN up Form Section -->

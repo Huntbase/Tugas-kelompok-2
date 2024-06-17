@@ -10,3 +10,9 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
+
+const url = window.location.href
+
+if (url.includes('username')){
+    signUpButton.click()
+}
