@@ -47,7 +47,7 @@ if (isset($_POST['register'])) {
         // jika query simpan berhasil, maka user sudah terdaftar
         // maka alihkan ke halaman login
         if ($saved) {
-            header("Location: login.php?username=mikaael");
+            header("Location: login.php");
             exit();
         } else {
             $_SESSION['error_message'] = "Pendaftaran gagal, silakan coba lagi.";
@@ -80,8 +80,15 @@ if (isset($_POST['login'])) {
         if (password_verify($password, $user["password"])) {
             // buat Session
             $_SESSION["user"] = $user;
-            // login sukses, alihkan ke halaman timeline
-            header("Location: Home.php");
+
+            // Memeriksa peran pengguna
+            if ($user['role'] == 'admin') {
+                // login sukses sebagai admin, alihkan ke halaman admin
+                header("Location: HomeA.php");
+            } else {
+                // login sukses sebagai user, alihkan ke halaman user
+                header("Location: HomeU.php");
+            }
             exit();
         } else {
             $_SESSION['error_message'] = "Password salah!";
@@ -102,6 +109,8 @@ if (isset($_POST['login'])) {
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="css/Login.css">
+    <link rel="shortcut icon" href="img\Login\LogoOutlineHitam.png" type="image/x-icon">
+    <link rel="icon" href="img\Login\LogoOutlineHitam.png" type="image/x-icon">
 </head>
 
 <body>

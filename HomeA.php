@@ -1,3 +1,5 @@
+<?php require_once("auth.php"); ?>
+
 <html>
 
 <head>
@@ -21,8 +23,8 @@
     <div class="login">
         <a href="#"><img src="img\Navbar\profil.png" alt=""> </a>
         <ul>
-            <li><a href="Penitipanhewan.html">Akun</a></li>
-            <li><a href="Groominghewan.html">Log Out</a></li>
+            <li><a href="timeline.php">Akun</a></li>
+            <li><a href="logout.php">Log Out</a></li>
         </ul>
     </div>
 
