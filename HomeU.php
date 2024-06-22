@@ -23,7 +23,7 @@
     <div class="login">
         <a href="#"><img src="img\Navbar\profil.png" alt=""> </a>
         <ul>
-            <li><a href="timeline.php">Akun</a></li>
+            <li><a href="Akun.php">Akun</a></li>
             <li><a href="logout.php">Log Out</a></li>
         </ul>
     </div>
