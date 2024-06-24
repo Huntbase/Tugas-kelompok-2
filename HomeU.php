@@ -11,32 +11,58 @@
 </head>
 
 <body>
-    <div class="container">
-        <h3 style="font-family:'Franklin Gothic Medium'"> <i>PETTOPIA</i> </h3>
-        <p>Melayani Anda dengan Sepenuh Hati</p>
+    <!-- Navbar -->
+    <div class="navbar2">
+        <div class="container">
+            <img src="img\Navbar\Logo.png" alt="">
+            <div class="textlogo">
+                <h3 style="font-family:'Franklin Gothic Medium'">PETTOPIA </h3>
+                <p>Melayani Anda dengan Sepenuh Hati</p>
+            </div>
+        </div>
+
+        <form>
+            <input type="text" name="search" placeholder="Search">
+        </form>
+
+        <div class="keranjang">
+            <a href="Keranjang.html"> <img src="img\Navbar\Keranjang.png"> </a>
+        </div>
+
+        <div class="login">
+            <a href="#"><img src="img\Navbar\profil.png" alt=""> </a>
+            <ul>
+                <li><a href="Akun.php">Akun</a></li>
+                <li><a href="logout.php">Log Out</a></li>
+            </ul>
+        </div>
+
     </div>
 
-    <div class="logo">
-        <img src="img\Navbar\Logo.png" alt="">
-    </div>
-
-    <div class="login">
-        <a href="#"><img src="img\Navbar\profil.png" alt=""> </a>
+    <nav class="navbar">
         <ul>
-            <li><a href="Akun.php">Akun</a></li>
-            <li><a href="logout.php">Log Out</a></li>
+            <li><a href="pettopia.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="Penitipanhewan.html">Penitipan Hewan</a></li>
+                    <li><a href="Groominghewan.html">Grooming Hewan</a></li>
+                    <li><a href="Dokterhewan.html">Dokter Hewan</a></li>
+                    <li><a href="Produk.html">Produk</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Articles.html">Articles</a></li>
+            <li><a href="Promotion.html">Promotion</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
+            <li><a href="Myorder.html">My Order</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <form>
-        <input type="text" name="search" placeholder="Search">
-    </form>
+    <script src="home.js"></script>
+    <!-- Navbar -->
 
-    <div class="keranjang">
-        <a href="Keranjang.html"> <img src="img\Navbar\Keranjang.png"> </a>
-    </div>
-
-
+    <!-- Gambar slide -->
     <div class="containers">
         <div id="slide">
             <div class="item" style="background-image: url(pettopia/1.jpg);">
@@ -93,28 +119,7 @@
             <button id="next"><i class="fa-solid fa-angle-right"></i></button>
         </div>
     </div>
-
-    <nav class="navbar">
-        <ul>
-            <li><a href="pettopia.html">Home</a></li>
-            <li><a href="Aboutus.html">About Us</a></li>
-            <li><a href="#">Services</a>
-                <ul>
-                    <li><a href="Penitipanhewan.html">Penitipan Hewan</a></li>
-                    <li><a href="Groominghewan.html">Grooming Hewan</a></li>
-                    <li><a href="Dokterhewan.html">Dokter Hewan</a></li>
-                    <li><a href="Produk.html">Produk</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="Articles.html">Articles</a></li>
-            <li><a href="Promotion.html">Promotion</a></li>
-            <li><a href="Contactus.html">Contact Us</a></li>
-            <li><a href="Myorder.html">My Order</a></li>
-        </ul>
-    </nav>
-
-    <script src="home.js"></script>
+    <!-- Gambar slide -->
 
 </body>
 
