@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title> Pettopia </title>
+        <link rel="stylesheet" type = "text/css" href="Checkout.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3 style="font-family:'Franklin Gothic Medium'"> <i>PETTOPIA</i> </h3>
+            <p>Melayani Anda dengan Sepenuh Hati</p>
+            </div>
+
+        <div class="logo">
+        <img src="logo.png" alt="">
+        </div>  
+
+        <div class="login">
+            <a href="Login.html"> <img src="profil.png" alt=""> </a>
+        </div>
+
+        <form>
+            <input type = "text" name="search" placeholder="Search">
+        </form>
+
+        <!--Jangan lupa link nya diganti kalau nanti diganti-->
+        <div class = "keranjang">
+            <a href="Keranjang.html"> <img src = "BASKET 2.png"> </a>
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="pettopia.html">Home</a></li> 
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="Penitipanhewan.html">Penitipan Hewan</a></li>
+                        <li><a href="Groominghewan.html">Grooming Hewan</a></li>
+                        <li><a href="Dokterhewan.html">Dokter Hewan</a></li>
+                        <li><a href="Produk.html">Produk</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Articles.html">Articles</a></li>
+                <li><a href="Promotion.html">Promotion</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li><a href="Myorder.html">My Order</a></li>
+            </ul>
+            </nav>
+
+
+<div class="summary">
+    <div class="top">
+        <h2 class="rangkuman">Rincian Pemesanan</h2>
+    </div>
+    <div class="detail">
+    </div>
+    <div style="margin-top: 40px; padding: 0 30px;">
+
+        <div class="alamat">
+        <b>Masukkan Alamat</b><b class="titikdua">:</b>
+        <div class="alamat">
+        <textarea class="textarea" name="alamat" rows="3" cols="60" placeholder="Masukkan Alamat Anda..."></textarea><br><br>
+        </div>
+    </div>
+
+        <div class="jasa">
+        <b>Jasa Pengiriman</b><b class="titikdua">:</b>
+        <select class="pilihan" name ="jasa_pengiriman">
+            <option value ="Instant-Gojek Express">Instant-Gojek Express (Rp 15.000/kg)</option>
+            <option value ="Instant-Grab Express">Instant-Grab Express (Rp 18.000/kg)</option>
+            <option value ="Sameday-Grab Sameday">Sameday-Grab Sameday (Rp 12.000/kg)</option>
+            <option value ="Kurir Pettopia">Kurir Pettopia (5.000/kg)</option>
+        </select><br><br>
+        </div>
+
+    <div class="radio">
+        <b>Metode Pembayaran :</b><br>
+        <input class="metode" type="radio" name ="metode_pembayaran" value="COD" /> <p> COD (Khusus Kurir Pettopia) </p>
+        <input class="metode" type="radio" name ="metode_pembayaran" value="Gopay" /> <p>Gopay</p>
+        <input class="metode" type="radio" name ="metode_pembayaran" value="Dana" /> <p> Dana </p> 
+        <input class="metode" type="radio" name ="metode_pembayaran" value="Transfer Bank" /> <p>Transfer Bank</p>
+        <input class="metode" type="radio" name ="metode_pembayaran" value="Kartu Kredit" /> <p> Kartu Kredit </p>
+        </div>
+    </div>
+
+    <div class="top">
+        <h2>Rincian Pembayaran: </h2>
+        <div class="rincianpembayaran">
+        <h3 id="hargaproduk2">Harga Produk</h3>
+        <h3 id="hargaproduk3">Rp 25.000</h3>
+        <h3 id="ongkoskirim">Ongkos Kirim</h3>
+        <h3 id="ongkoskirim2">Rp 15.000</h3>
+        <h3 id="Total">Total Pembayaran</h3>
+        <h3 id="Total2">Rp 40.000</h3>
+    </div>
+    </div>
+    <div style="padding: 0 10px; margin-bottom: 30px;">
+        <a href="Pesanansayaproduk.html"><button class="checkout"><b>Buat Pesanan</b></button></a>
+    </div>  
+</div>
+</div>
+
+</body>
+</html>

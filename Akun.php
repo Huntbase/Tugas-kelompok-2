@@ -14,51 +14,45 @@ $masked_password = str_repeat('*', 10);
     <link rel="stylesheet" href="css\Akun.css">
     <link rel="shortcut icon" href="img\Login\LogoOutlineHitam.png" type="image/x-icon">
     <link rel="icon" href="img\Login\LogoOutlineHitam.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <h3 style="font-family:'Franklin Gothic Medium'"> <i>PETTOPIA</i> </h3>
-        <p>Melayani Anda dengan Sepenuh Hati</p>
-    </div>
-
-    <div class="logo">
-        <img src="img\Navbar\Logo.png" alt="">
-    </div>
-
-    <div class="login">
-        <a href="Login.php"> <img src="img\Navbar\profil.png" alt=""> </a>
-    </div>
-
-    <form>
-        <input type="text" name="search" placeholder="Search">
-    </form>
-
-    <div class="keranjang">
-        <a href="Keranjang.html"> <img src="img\Navbar\Keranjang.png"> </a>
-    </div>
-    <nav class="navbar">
+    <!-- Navbar -->
+    <div class="header">
+        <div class="logo">
+            <img src="img\Navbar\Logo.png" alt="">
+        </div>
         <ul>
             <li><a href="pettopia.html">Home</a></li>
-            <li><a href="Aboutus.html">About Us</a></li>
-            <li><a href="#">Services</a>
-                <ul>
-                    <li><a href="Penitipanhewan.html">Penitipan Hewan</a></li>
-                    <li><a href="Groominghewan.html">Grooming Hewan</a></li>
-                    <li><a href="Dokterhewan.html">Dokter Hewan</a></li>
-                    <li><a href="Produk.html">Produk</a>
-                    </li>
-                </ul>
+            <li><a href="#">Services <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown__menu">
+                    <ul>
+                        <li><a href="Penitipanhewan.html">Penitipan Hewan</a></li>
+                        <li><a href="Groominghewan.html">Grooming Hewan</a></li>
+                        <li><a href="Dokterhewan.html">Dokter Hewan</a></li>
+                        <li><a href="Produk.html">Produk</a></li>
+                    </ul>
+                </div>
             </li>
             <li><a href="Articles.html">Articles</a></li>
             <li><a href="Promotion.html">Promotion</a></li>
-            <li><a href="Contactus.html">Contact Us</a></li>
             <li><a href="Myorder.html">My Order</a></li>
         </ul>
-    </nav>
-
+        <div class="hkiri">
+            <div class="keranjang">
+                <a href="Keranjang.html"> <img src="img\Navbar\Keranjang.png"> </a>
+            </div>
+            <div class="login">
+                <a href="Login.html"> <img src="img\Navbar\profil.png" alt=""> </a>
+            </div>
+        </div>
+    </div>
     <script src="home.js"></script>
+    <!-- Navbar -->
 
+    <!-- Tabel Akun -->
     <div class="profile-container">
         <div class="profile-sidebar">
             <div class="profile-picture">
@@ -91,6 +85,44 @@ $masked_password = str_repeat('*', 10);
             </form>
         </div>
     </div>
+    <!-- Tabel Akun -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="img\Login\LogoOutlineHitam.png" alt="LogoPettopia" class="logofooter">
+            </div>
+            <div class="col">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="pettopia.html">Home</a></li>
+                    <li><a href="PenitipanHewan.html">Services</a></li>
+                    <li><a href="Articles.html">Articles</a></li>
+                    <li><a href="Promotion.html">Promotion</a></li>
+                    <li><a href="Myorder.html">My Order</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Contact Us</h3>
+                <p>Petshop Pettopia</p>
+                <p>Jl. Gelimang Jaya Abadi No 1, Kota Bogor</p>
+                <p>0251-1234-5678</p>
+                <p>@pettopia.indonesia (IG)</p>
+                <p>@pettopia.id (FB)</p>
+            </div>
+        </div>
+        <hr>
+        <div class="socialicons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <p class="copyright">©2024 Petshop Pettopia</p>
+    </footer>
+    <!-- Footer -->
+
 </body>
 
 </html>

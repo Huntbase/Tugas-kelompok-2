@@ -1,0 +1,455 @@
+
+body{
+    background-color: #FDC0C0;
+    background-size: 100%;
+}
+
+.logo img{
+    width: 100px;
+    margin-left: 20px;
+    margin-top: -99px;
+}
+
+.container h3{
+    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-left: 120px;
+    font-size: 25;
+    letter-spacing: 2px;
+
+}
+
+.container p{
+    margin-top: -15px;
+    margin-left: 120px;
+}
+
+input[type=text]
+{
+    width: 130px;
+    height: 40px;
+    margin-left: 550px;
+    margin-top: -57px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+    background-image: url('search.png');
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    padding: 15px 2px 10px 50px;
+    -webkit-transition: width 0.5s ease-out;
+    transition: width 0.5s ease-in-out;
+}
+
+input[type=text]:focus
+{
+    width: 40%;
+}
+
+form ::placeholder{
+color: black;
+}
+
+
+.login{
+    display: flex;
+}
+
+.login img{
+    width: 70px;
+    margin-left: 1150px;
+    margin-top: -75px;
+}
+
+
+nav  {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    width: 150px;
+}
+
+.navbar{
+    margin-left: -10px;
+    width: 1320px;
+    display: flex;
+}
+
+nav ul {
+    background: white;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover {
+    background: #d4d4d4;
+}
+
+nav ul li:hover a {
+    color: black;
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px;
+    color: black;
+    text-decoration: none;
+    margin-left: 1px;
+}
+
+nav ul ul {
+    background: white;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #ffdfc4;
+    border-bottom: 1px solid #ffdfc4;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #fff;
+}
+
+nav ul ul li a:hover {
+    background-color: #D4D4D4 ;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.keranjang{
+    margin-left: 1090px;
+    margin-top: -75px;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li a{
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+}
+
+li a:hover{
+    color: #18bdfe;
+}
+
+.container-1{
+    display: flex;
+    margin: 3rem 20px;
+    margin-top: 20px;
+    height: 500px;
+}
+.cart{
+    width: 100%;
+    background-color: white;
+    height: 500px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+table{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-head{
+    color: black;
+    background-color: #d4d4d4;
+}
+
+.head-img{
+    text-align: left;
+    padding-left:120px;
+}
+
+.summary{
+    background-color: white;
+    width: 96.7%;
+    margin-left: 20px;
+}
+
+.detail{
+    margin: 10px 0;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #D4D4D4;
+    color: black;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.metode{
+    border: none;
+    outline: none;
+    height: 30px;
+    margin-bottom: -30px;
+}
+
+.radio p{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+button{
+    border: none;
+    background-color: red;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.checkout{
+    width: 100%;
+    background-color: #d4d4d4;
+    color: black;
+    margin-top: -30px;
+}
+
+button:hover, .checkout:hover{
+    background-color: #333;
+}
+
+.img-box{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border:  1px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+
+.fa-trash{
+    color: #18bdfe;
+}
+
+.fa-trash:hover{
+    color: #333;
+}
+
+.rangkuman{
+    margin-top: 50px;
+    margin-left: 520px;
+}
+
+.nama{
+    text-align: left;
+    padding-left: 5px;
+}
+
+.jumlah{
+    text-align: left;
+    padding-left: 95px;
+}
+
+.harga{
+    text-align: left;
+    padding-left: 5px;
+}
+
+
+.keranjangku{
+    margin-left: 40px;
+
+}
+
+.gambarproduk img{
+    width: 70px;
+    height: 70px;
+    margin-left: 144.5px;
+    margin-top: -743px;
+    border-radius: 50px;
+}
+
+.namaproduk{
+    margin-top: -720px;
+    margin-left: 413px;
+}
+
+.jumlahproduk{
+    margin-top: -38.84px;
+    margin-left: 767px;
+}
+
+.hargaproduk{
+    margin-top: -50px;
+    margin-left: 1008px;
+}
+
+.garis{
+    margin-top: 100px;
+    color: black;
+}
+
+#itemA{
+    padding-right: 90px;
+}
+
+#itemB{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+#totalA{
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.rincianpemesanan{
+    margin-top: 445px;
+    font-size: 18px;
+}
+
+#hargaproduk2{
+    margin-left: -410px;
+    margin-top: 55px;
+    font-size: 18px;
+}
+
+#ongkoskirim{
+    margin-left: -410px ;
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+#total{
+    margin-left: -410px ;
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+#hargaproduk3{
+    margin-left: -110px ;
+    margin-top: -40px;
+    font-size: 18px;
+}
+
+#ongkoskirim2{
+    margin-left: -110px ;
+    margin-top: -40px;
+    font-size: 18px;
+}
+
+#total2{
+    margin-left: -110px ;
+    margin-top: -40px;
+    font-size: 18px;
+}
+
+.radio{
+    font-size: 18px;
+}
+
+.jasa{
+    font-size: 18px;
+}
+
+.alamat{
+    font-size: 18px;
+}
+
+.alamat .titikdua{
+    margin-left: 23px;
+}
+
+.alamat textarea{
+    margin-left: 180px;
+    margin-top: -35px;
+}
+
+.titikdua{
+    margin-left: 37px;
+}
+
+.pilihan{
+    margin-left: 4px;
+    height: 30px;
+}
+
+.ceklis{
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    margin-top: -45px;
+    margin-left: 55px;
+}
+
+.sampah{
+    width: 30px;
+    height: 30px;
+    margin-top: -50px;
+    margin-left: 1160px;
+}
+
+.check-out{
+    margin-top: 180px;
+    margin-left: 1130px;
+    color: black;
+    background-color: #D4D4D4;
+}
+
+h3{
+    margin-right: 827px;
+    margin-bottom: 23px;
+}
+
+h2{
+    margin-top: 0;
+    margin-left: 20px;
+}

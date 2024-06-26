@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title> Pettopia </title>
+        <link rel="stylesheet" type = "text/css" href="FormKonsultasiOnline.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3 style="font-family:'Franklin Gothic Medium'"> <i>PETTOPIA</i> </h3>
+            <p>Melayani Anda dengan Sepenuh Hati</p>
+            </div>
+
+        <div class="logo">
+        <img src="Logoo.png" alt="">
+        </div>  
+
+        <div class="login">
+            <a href="Login.html"> <img src="profil.png" alt=""> </a>
+        </div>
+        
+        <form>
+            <input type = "text" name="search" placeholder="Search">
+        </form>
+
+        <div class = "keranjang">
+            <a href="Keranjang.html"> <img src = "BASKET 2.png"> </a>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="pettopia.html">Home</a></li> 
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="PenitipanHewan.html">Penitipan Hewan</a></li>
+                        <li><a href="GroomingHewan.html">Grooming Hewan</a></li>
+                        <li><a href="DokterHewan.html">Dokter Hewan</a></li>
+                        <li><a href="Produk.html">Produk</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="Articles.html">Articles</a></li>
+                <li><a href="Promotion.html">Promotion</a></li>
+                <li><a href="Contactus.html">Contact Us</a></li>
+                <li><a href="Myorder.html">My Order</a></li>
+            </ul>
+        </nav>
+        <h1>Form Konsultasi Online</h1>
+        <br>
+        <h2>Identitas</h2>
+        <table align="center" class="tableform">
+            <tr>
+                <td width="254px">Nama</td>
+                <td width="35px" align="center">:</td>
+                <td width="619px"><input class="text" placeholder="Nama Anda" required></td>
+            </tr>
+            <tr>
+                <td>Nomor Handphone</td>
+                <td align="center">:</td>
+                <td><input class="tel" placeholder="Nomor Handphone Anda" required></td>
+            </tr>
+            <tr>
+                <td>Nama Hewan</td>
+                <td align="center">:</td>
+                <td><input class="text" placeholder="Nama Hewan Anda"required></td>
+            </tr>
+            <tr>
+                <td>Spesies Hewan</td>
+                <td align="center">:</td>
+                <td><div><input type="radio" name="Spesies" value="Kucing" checked>Kucing
+                    <input type="radio" name="Spesies" value="Ikan">Ikan
+                    <input type="radio" name="Spesies" value="Anjing">Anjing</div></td>
+            </tr>
+            <tr>
+                <td>Ras Hewan</td>
+                <td align="center">:</td>
+                <td><input class="text" placeholder="Ras Hewan Anda (co: Shih-Tzu)" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin Hewan</td>
+                <td align="center">:</td>
+                <td><input type="radio" name="JenisKelamin" value="Jantan" checked>Jantan
+                    <input type="radio" name="JenisKelamin" value="Betina">Betina</td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir Hewan</td>
+                <td align="center">:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Berat Hewan</td>
+                <td align="center">:</td>
+                <td><input type="number" min="0" class="beratkg" placeholder="kilogram" required>kg
+                    <input type="number" min="0" class="beratgr" placeholder="gram">gram  *</td>
+            </tr>
+        </table>
+        <p class="tambahan">*Contoh hewan dengan berat 5,3 kg maka dituliskan sebagai 5 kg 300 gram</p>
+        <br>
+        <h2>Layanan</h2>
+        <table align="center" class="tableform">
+            <tr>
+                <td>Jenis Konsultasi</td>
+                <td align="center">:</td>
+                <td><input type="radio" name="JenisKonsultasi" value="Chat" checked>Konsultasi via Chat
+                    <input type="radio" name="JenisKonsultasi" value="Video">Konsultasi via Video</td>
+            </tr>
+            <tr>
+                <td width="254px">Dokter Hewan</td>
+                <td width="35px" align="center">:</td>
+                <td width="619px">
+                    <div class="containerpopup">
+                        <button type="submit" class="btn" onclick="openPopup()">Pilih Dokter Hewan</button>
+                        <div class="popup" id="popup">
+                            <table align="center" rules="cols" class="tablepopup" style="background-color: #fdc0c0;">
+                                <tr class="fotodrh" align="center">
+                                    <td width="300px"><img src="Images/drh1.png"></td>
+                                    <td></td>
+                                    <td width="300px"><img src="Images/drh2.png"></td>
+                                    <td></td>
+                                    <td width="300px"><img src="Images/drh3.png"></td>
+                                </tr>
+                                <tr class="namadrh" align="center" height="30px">
+                                    <td>drh. Vanya Prastuti</td>
+                                    <td></td>
+                                    <td>drh. Hardi Setiawan</td>
+                                    <td></td>
+                                    <td>drh. Natalia Agustina</td>
+                                </tr>
+                                <tr class="identitasdrh" align="center">
+                                    <td>Alumni : Institut Pertanian Bogor <br>
+                                    Pengalaman : 2 tahun</td>
+                                    <td></td>
+                                    <td>Alumni : Universitas Airlangga <br>
+                                        Pengalaman : 5 tahun</td>
+                                        <td></td>
+                                    <td>Alumni : Universitas Indonesia <br>
+                                        Pengalaman : 4 tahun</td>
+                                </tr>
+                                <tr class="pilih" align="center">
+                                    <td><button type="button" onclick="closePopup()">Pilih</button></td>
+                                    <td></td>
+                                    <td><button type="button" onclick="closePopup()">Pilih</button></td>
+                                    <td></td>
+                                    <td><button type="button" onclick="closePopup()">Pilih</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Kondisi Hewan (Keluhan)</td>
+                <td align="center">:</td>
+                <td><textarea class="kondisi" cols="80" rows="5" placeholder="Tuliskan kondisi hewan Anda, seperti riwayat penyakit atau lainnya"></textarea>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h2>Pembayaran</h2>
+        <table align="center" class="tableform">
+            <tr>
+                <td align="center" style="background-color: #fffcfc;" width="532px">Jenis Konsultasi</td>
+                <td align="center" style="background-color: #fffcfc;" width="377px">Harga</td>
+            </tr>
+            <tr>
+                <td style="background-color: #fffcfc; padding-left: 10px;" width="532px">Konsultasi Via Chat (15 menit)</td>
+                <td style="background-color: #fffcfc; padding-left: 10px;" width="377px">Rp 35.000</td>
+            </tr>
+            <tr>
+                <td align="right" style="background-color: #e5e4e4; padding-right: 10px;" width="532px">Subtotal</td>
+                <td style="background-color: #e5e4e4; padding-left: 10px;" width="377px">Rp 35.000</td>
+            </tr>
+            <tr>
+                <td align="right" style="background-color: #e5e4e4; padding-right: 10px;" width="532px">Biaya Admin</td>
+                <td style="background-color: #e5e4e4; padding-left: 10px;" width="377px">Rp 5.000</td>
+            </tr>
+            <tr>
+                <td align="right" style="background-color: #d9d9d9; padding-right: 10px;" width="532px">Total Pembayaran</td>
+                <td style="background-color: #d9d9d9; padding-left: 10px;" width="377px">Rp 40.000</td>
+            </tr>
+        </table>
+        <br><br>
+        <table align="center" class="tableform">
+            <tr>
+                <td width="254px">Metode Pembayaran</td>
+                <td width="35px" align="center">:</td>
+                <td width="600px">
+                    <select name="MetodePembayaran" id="metodepembayaran">
+                        <option value="Gopay">Gopay</option>
+                        <option value="Dana">Dana</option>
+                        <option value="TransferBank">Transfer Bank</option>
+                        <option value="KartuKredit">Kartu Kredit</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button type="Konfirmasi" id="Konfirmasi"><a href="PesananSayaLayanan.html">
+            <span class="Konfirmasi_text"><b>Konfirmasi</b></a></span>
+        </button>
+        <br><br><br><br>
+    <script src="FormKonsultasiOnline.js">
+    </script>
+    </body>
+</html> 
